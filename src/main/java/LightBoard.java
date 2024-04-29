@@ -15,10 +15,8 @@ public class LightBoard
     /* to be implemented in part (a) */
     for(int r = 0; r < numRows;r++){
       for(int c = 0; c < numCols;c++){
-        if(Math.random() < 0.4)
-          lights[r][c] = true;
-        else
-          lights[r][c] = false;
+        double rnd = Math.random();
+        lights[r][c] = rnd < 0.4;
       }
     }
   }
@@ -36,7 +34,7 @@ public class LightBoard
         on++;
     if(lights[row][col] && on%2 == 0)
         return true;
-   if(lights[row][col] == false && on%3 == 0)  
+   if(!lights[row][col] && on%3 == 0)  
       return false;
     
    return lights[row][col];
