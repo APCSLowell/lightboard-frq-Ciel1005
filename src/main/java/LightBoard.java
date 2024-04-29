@@ -30,7 +30,7 @@ public class LightBoard
     /* to be implemented in part (b) */
    int on = 0;
     for(int r = 0; r < lights.length; r++)
-      if(lights[i][col])
+      if(lights[r][col])
         on++;
     if(lights[row][col] && on%2 == 0)
         return false;
@@ -39,6 +39,7 @@ public class LightBoard
     
    return lights[row][col];
   }
+  
   public boolean[][] getLights()
   {
     return lights;
