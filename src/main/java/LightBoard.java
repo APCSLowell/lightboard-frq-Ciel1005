@@ -33,9 +33,9 @@ public class LightBoard
       if(lights[i][col])
         on++;
     if(lights[row][col] && on%2 == 0)
-        return true;
+        return false;
    if(!lights[row][col] && on%3 == 0)  
-      return false;
+      return true;
     
    return lights[row][col];
   }
