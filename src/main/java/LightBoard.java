@@ -10,6 +10,8 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
+    lights = new boolean[numRows][numCols];
+    
     /* to be implemented in part (a) */
     for(int r = 0; r < lights.length;r++){
       for(int c = 0l c < lights[r].length;c++){
