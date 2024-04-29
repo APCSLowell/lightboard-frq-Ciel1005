@@ -14,7 +14,7 @@ public class LightBoard
     
     /* to be implemented in part (a) */
     for(int r = 0; r < lights.length;r++){
-      for(int c = 0l c < lights[r].length;c++){
+      for(int c = 0; c < lights[r].length;c++){
         if(Math.random() < 0.4)
           lights[r][c] = true;
         else
